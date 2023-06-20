@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ddd;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height:65px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    padding: 0 50px;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .navbar-brand a {
+    display: flex;
+    align-items: center;
+}
+
+nav .navbar-brand img {
+    width: 32px;
+}
+
+/* navbar-left */
+nav .navbar-brand span {
+    color: #6E7891;
+    font-size: 19px;
+    font-weight: bold;
+    display: block;
+    padding-left: 10px;
+}
+
+/* navbar-center */
+nav .navbar-nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+nav .navbar-nav ul .nav-item .nav-link {
+    color: rgb(52, 52, 52);
+    font-weight: 500;
+    display: block;
+    padding: 9px 30px;
+}
+
+nav .navbar-nav ul .nav-item {
+    padding: 0px 0px;
+    border-radius: 6px;
+    position: relative;
+}
+
+nav .navbar-nav ul .nav-item:hover {
+    background-color: #ddd;
+}
+
+/* dropdown */
+
+nav .navbar-nav .dropdown-menu {
+    width: 270px;
+    padding: 12px 0px;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: -8px 0px 16px -4px rgba(0, 0, 0, 0.1);
+    display: none;
+    top: 62px;
+    border-radius: 8px;
+}
+nav .navbar-nav .dropdown-menu ul {
+    flex-direction: column;
+}
+
+nav .navbar-nav ul .nav-item:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu .bg-transparent {
+    width: 100%;
+    height: 25px;
+    position: absolute;
+    background-color: transparent;
+    top: -25px;
+}
+
+.dropdown-menu .traingle {
+    width: 18px;
+    height: 18px;
+    background-color: #fff;
+    position: absolute;
+    top: -9px;
+    left: 20px;
+    z-index: 99;
+    transform: rotate(-45deg);
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+/* navbar-right */
+nav .navbar-right ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav .navbar-right .profile {
+    width: 30px;
+    height: 30px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+nav .navbar-right .logo{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(253, 210, 195);
+    border-radius: 50%;
+    background-image: url(../icons8-sun-light-50.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
